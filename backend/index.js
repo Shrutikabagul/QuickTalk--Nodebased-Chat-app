@@ -7,7 +7,7 @@ app.use(cors({ origin: true }));
 
 app.post("/authenticate", async (req, res) => {
     const { username } = req.body;
-    // Get or create user on Chat Engine!
+    
     try {
       const r = await axios.put(
         "https://api.chatengine.io/users/",
